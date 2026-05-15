@@ -1,0 +1,211 @@
+Create a complete modern React + Vite web application called CineVerse.
+
+IMPORTANT:
+This project MUST be a pure frontend React + Vite application only.
+Do NOT create:
+- Express server
+- Node backend
+- API server
+- Replit backend
+- Server routes
+- src/routes
+- health.ts
+- server.ts
+- backend folders
+- monorepo structure
+- workspace packages
+
+The entire project must be a simple deployable frontend app that works directly on:
+- Vercel
+- Netlify
+- GitHub Pages
+
+The project must build successfully with:
+npm install
+npm run build
+
+The build output must be:
+dist
+
+Use this stack only:
+- React
+- Vite
+- TypeScript
+- React Router DOM
+- Tailwind CSS
+- react-i18next
+- TMDB API
+- LocalStorage
+
+Use only functional components and hooks.
+
+Requirements:
+
+1. General Design
+- Dark cinematic Netflix-style UI
+- Fully responsive
+- Smooth animations
+- Professional spacing/layout
+- Modern movie cards
+- Loading states
+- Error handling
+- Mobile navbar
+
+2. Pages
+- Home
+- Trending
+- Top Rated
+- Search
+- Movie Details
+- Favorites
+- Not Found
+
+3. Home Page
+- Hero section
+- Trending section
+- Popular movies
+- Top rated preview
+- CTA buttons
+
+4. Trending Page
+- Trending movies
+- Pagination or Load More
+
+5. Top Rated Page
+- Top rated movies
+- Pagination or Load More
+
+6. Search Page
+- Search by movie name
+- Loading state
+- Empty state
+
+7. Movie Details
+- Backdrop image
+- Poster
+- Overview
+- Rating
+- Genres
+- Runtime
+- Language
+- Cast
+- Trailer embed
+- Favorites button
+
+8. Favorites
+- Store favorites in LocalStorage
+- Persist after refresh
+- Remove favorites
+- Empty state
+
+9. Navigation
+- Responsive navbar
+- Language switcher
+- Mobile hamburger menu
+
+10. Multilingual Support
+Languages:
+- Arabic
+- English
+- Russian
+
+Requirements:
+- react-i18next
+- Save language in LocalStorage
+- Arabic uses RTL
+- English/Russian use LTR
+- Translate ALL UI text
+
+11. API
+Use TMDB API.
+
+IMPORTANT:
+- Use .env
+- Use VITE_TMDB_API_KEY
+- Never hardcode API keys
+
+Create API service functions for:
+- Trending
+- Popular
+- Top rated
+- Search
+- Movie details
+- Credits
+- Videos
+
+12. Components
+Create reusable components:
+- Navbar
+- Footer
+- MovieCard
+- MovieGrid
+- Hero
+- Loader
+- ErrorMessage
+- LanguageSwitcher
+- FavoriteButton
+- SearchBar
+
+13. Folder Structure
+
+src/
+components/
+pages/
+services/
+context/
+i18n/
+locales/
+App.tsx
+main.tsx
+
+14. State Management
+- React Context for favorites
+- LocalStorage persistence
+
+15. Styling
+Use Tailwind CSS with:
+- Dark background
+- Red/purple cinematic accents
+- Hover animations
+- Rounded cards
+- Glassmorphism
+
+16. Extra Features
+- Scroll to top button
+- Skeleton loading
+- Rating badges
+- Fallback images
+- Clean footer
+
+17. VERY IMPORTANT DEPLOYMENT RULES
+- NO backend/server code
+- NO monorepo
+- NO workspaces
+- NO artifacts folder
+- NO api-server folder
+- NO custom server
+- NO Replit server runtime
+- NO Express
+- NO health.ts
+- NO TypeScript path alias issues
+- Configure aliases correctly
+- Configure Vite correctly
+- Configure tsconfig correctly
+- Ensure npm run build succeeds with ZERO errors
+- Ensure npm run dev works
+- Ensure deployment works directly on Vercel
+
+18. README
+Include:
+- install instructions
+- how to add TMDB API key
+- how to run
+- how to build
+- how to deploy to Vercel
+
+19. Final Verification
+Before finishing:
+- Run npm install
+- Run npm run build
+- Fix ALL errors
+- Confirm successful production build
